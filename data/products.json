@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "name": "Plastic Product #1",
+    "shortDescription": "High-quality transparent plastic component manufactured with precision engineering for durability and clarity.",
+    "images": [
+       "/products/images/gallery-img-01.jpg",
+       "/products/images/gallery-img-02.jpg",
+       "/products/images/gallery-img-02.jpg",
+       "/products/images/gallery-img-02.jpg"
+    ],
+    "description": "At JCV Precision Manufacturing, producing flawless transparent plastic parts requires specialized expertise and infrastructure.",
+    "features": [
+      "Mirror-Polished Cavities: Eliminates flow marks or haze.",
+      "Optimized Venting & Cooling: Prevents gas traps and cloudiness.",
+      "Optical-Grade Material Handling: Hygroscopic resins dried at ≤0.02% humidity.",
+      "Automated Machines: ±0.03mm repeatability with fine temperature control."
+    ],
+    "keywords": [
+      "Plastic Injection Molding Parts",
+      "Custom Plastic Parts",
+      "Clear Plastic Parts",
+      "Transparent Plastic Parts"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Plastic Product #2",
+    "shortDescription": "Durable custom plastic part designed for industrial applications with clarity and precision.",
+    "images": [
+       "/products/images/gallery-img-03.jpg",
+       "/products/images/gallery-img-04.jpg",
+       "/products/images/gallery-img-04.jpg",
+       "/products/images/gallery-img-04.jpg"
+      
+    ],
+    "description": "Our second product offers optimized performance and premium transparency for demanding applications.",
+    "features": [
+      "High-Precision Molded Parts: ±0.05mm tolerance.",
+      "Anti-Scratch Surface: Maintains clarity under stress.",
+      "Advanced Cooling System: Prevents warping.",
+      "Automated Quality Checks: Ensures defect-free output."
+    ],
+    "keywords": [
+      "Custom Industrial Parts",
+      "Transparent Plastic Components",
+      "High-Precision Molding",
+      "Durable Plastic Parts"
+    ]
+  },
+  
+  {
+    "id": 3,
+    "name": "Plastic Product #3",
+    "shortDescription": "Durable custom plastic part designed for industrial applications with clarity and precision.",
+    "images": [
+       "/products/images/gallery-img-05.jpg",
+       "/products/images/gallery-img-06.jpg",
+       "/products/images/gallery-img-06.jpg",
+       "/products/images/gallery-img-06.jpg"
+    ],
+    "description": "Our second product offers optimized performance and premium transparency for demanding applications.",
+    "features": [
+      "High-Precision Molded Parts: ±0.05mm tolerance.",
+      "Anti-Scratch Surface: Maintains clarity under stress.",
+      "Advanced Cooling System: Prevents warping.",
+      "Automated Quality Checks: Ensures defect-free output."
+    ],
+    "keywords": [
+      "Custom Industrial Parts",
+      "Transparent Plastic Components",
+      "High-Precision Molding",
+      "Durable Plastic Parts"
+    ]
+  },
+
+  {
+    "id": 4,
+    "name": "Plastic Product #4",
+    "shortDescription": "Durable custom plastic part designed for industrial applications with clarity and precision.",
+    "images": [
+       "/products/images/gallery-img-07.jpg",
+       "/products/images/gallery-img-08.jpg",
+       "/products/images/gallery-img-08.jpg",
+       "/products/images/gallery-img-08.jpg"
+    ],
+    "description": "Our second product offers optimized performance and premium transparency for demanding applications.",
+    "features": [
+      "High-Precision Molded Parts: ±0.05mm tolerance.",
+      "Anti-Scratch Surface: Maintains clarity under stress.",
+      "Advanced Cooling System: Prevents warping.",
+      "Automated Quality Checks: Ensures defect-free output."
+    ],
+    "keywords": [
+      "Custom Industrial Parts",
+      "Transparent Plastic Components",
+      "High-Precision Molding",
+      "Durable Plastic Parts"
+    ]
+  }
+]

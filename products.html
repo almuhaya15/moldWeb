@@ -1,0 +1,306 @@
+<!--This is the products page, where the user can see and search
+for the products he wants-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SunLight - Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/slick/slick.css">
+    <link rel="stylesheet" href="/slick/slick-theme.css">
+    <link rel="stylesheet" href="/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/products.css" />
+</head>
+<body class="products-page">
+
+
+     <!-- Navigation -->
+      <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
+        <div class="container">   
+          <div class="tm-next">
+              <a href="#infinite" class="navbar-brand">SunLight</a>
+          </div>             
+            
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars navbar-toggler-icon"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link tm-nav-link" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link tm-nav-link" href="/index.html#whatwedo">What We Do</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link tm-nav-link" href="/index.html#testimonials">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link tm-nav-link" href="/index.html#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                   <a class="nav-link tm-nav-link current" href="/products.html">Products</a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link tm-nav-link" href="#contact">Contact</a>
+              </li>                    
+            </ul>
+          </div>        
+        </div>
+      </nav>
+
+
+       <!-- Hero -->
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Explore Our Products</h1>
+      <p>Find the Perfect Product for Your Needs</p>
+        <a href="#contact" class="btn-cta">Get In Touch!</a>
+
+    </div>
+  </div>
+
+      <!-- Breadcrumbs -->
+<nav class="breadcrumbs">
+  <a href="/HTML/index.html">Home</a> &gt;
+  <a href="/products/html/products.html">Products</a> &gt;
+</nav>
+
+  <div class="page">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Categories</h2>
+      <ul>
+        <li><a href="#" data-category="all" class="active">All Products</a></li>
+        <li><a href="#" data-category="plastic">Plastic Injection Molding</a></li>
+        <li><a href="#" data-category="metal">Sheet Metal Parts</a></li>
+        <li><a href="#" data-category="die">Mold and Die</a></li>
+        <li><a href="#" data-category="printing">3D Printing</a></li>
+      </ul>
+
+      <div class="contact-box">
+        <h3>Contact</h3>
+        <p><strong>Email:</strong><br> jcv@victory-sh.com</p>
+        <p><strong>Phone:</strong><br> +86-13256821248</p>
+      </div>
+    </aside>
+
+    <!--Loading logo-->
+<div id="loadingSpinner">
+  <div class="loader"></div>
+  <p>Loading...</p>
+</div>
+
+    <!-- Main Content -->
+    <main class="content">
+  <header class="content-head">
+    <h2>Products</h2>
+    <form class="search" onsubmit="return false;">
+      <input type="search" placeholder="Enter keyword...">
+      <button><i class="fas fa-search"></i></button>
+    </form>
+  </header>
+  <section class="products-grid" id="productsGrid">
+
+        <!-- Plastic -->
+         <a href="/products/html/product-dtl.html?id=1">
+        <div class="product-card plastic">
+          <img src="/img/gallery-img-01.jpg" alt="Plastic Product">
+          <h3>Plastic Product #1</h3>
+          <p>Example product in the Plastic Injection Molding category.</p>
+        </div>
+        </a>
+
+        <a href="/products/html/product-dtl.html?id=1">
+        <div class="product-card plastic">
+          <img src="/img/gallery-img-01.jpg" alt="Plastic Product">
+          <h3>Plastic Product #2</h3>
+          <p>Example product in the Plastic Injection Molding category.</p>
+        </div>
+        </a>
+
+        <!-- Metal -->
+         <a href="/products/html/product-dtl.html?id=2">
+        <div class="product-card metal">
+          <img src="/img/gallery-img-01.jpg" alt="Metal Product">
+          <h3>Metal Product #3</h3>
+          <p>Example product in the Sheet Metal Parts category.</p>
+        </div>
+      </a>
+      <a href="/products/html/product-dtl.html?id=2">
+        <div class="product-card metal">
+          <img src="/img/gallery-img-01.jpg" alt="Metal Product">
+          <h3>Metal Product #4</h3>
+          <p>Example product in the Sheet Metal Parts category.</p>
+        </div>
+      </a>
+        <!-- Die -->
+         <a href="/products/html/product-dtl.html?id=3">
+        <div class="product-card die">
+          <img src="/img/gallery-img-01.jpg" alt="Die Product">
+          <h3>Die Product #5</h3>
+          <p>Example product in the Mold and Die category.</p>
+        </div>
+        </a>
+        <a href="/products/html/product-dtl.html?id=3">
+        <div class="product-card die">
+          <img src="/img/gallery-img-01.jpg" alt="Die Product">
+          <h3>Die Product #6</h3>
+          <p>Example product in the Mold and Die category.</p>
+        </div>
+        </a>
+        <!-- Printing -->
+         <a href="/products/html/product-dtl.html?id=4">
+        <div class="product-card printing">
+          <img src="/img/gallery-img-01.jpg" alt="3D Printing Product">
+          <h3>3D Printing Product #7</h3>
+          <p>Example product in the 3D Printing category.</p>
+        </div>
+        </a>
+    <a href="/products/html/product-dtl.html?id=4">
+        <div class="product-card printing">
+          <img src="/img/gallery-img-01.jpg" alt="3D Printing Product">
+          <h3>3D Printing Product #8</h3>
+          <p>Example product in the 3D Printing category.</p>
+        </div>
+      </a>
+      <a href="/products/html/product-dtl.html?id=4">
+        <div class="product-card printing">
+          <img src="/img/gallery-img-01.jpg" alt="3D Printing Product">
+          <h3>3D Printing Product #9</h3>
+          <p>Example product in the 3D Printing category.</p>
+        </div>
+      </a>
+      <a href="/products/html/product-dtl.html?id=4">
+        <div class="product-card printing">
+          <img src="/img/gallery-img-01.jpg" alt="3D Printing Product">
+          <h3>3D Printing Product #10</h3>
+          <p>Example product in the 3D Printing category.</p>
+        </div>
+      </a>
+      <a href="/products/html/product-dtl.html?id=4">
+        <div class="product-card printing">
+          <img src="/img/gallery-img-01.jpg" alt="3D Printing Product">
+          <h3>3D Printing Product #11</h3>
+          <p>Example product in the 3D Printing category.</p>
+        </div>
+      </a>
+      <a href="/products/html/product-dtl.html?id=4">
+        <div class="product-card printing">
+          <img src="/img/gallery-img-01.jpg" alt="3D Printing Product">
+          <h3>3D Printing Product #12</h3>
+          <p>Example product in the 3D Printing category.</p>
+        </div>
+      </a>
+      <a href="/products/html/product-dtl.html?id=4">
+        <div class="product-card printing">
+          <img src="/img/gallery-img-01.jpg" alt="3D Printing Product">
+          <h3>3D Printing Product #13</h3>
+          <p>Example product in the 3D Printing category.</p>
+        </div>
+      </a>
+       <a href="/products/html/product-dtl.html?id=4">
+        <div class="product-card printing">
+          <img src="/products/images/gallery-img-06.jpg" alt="3D Printing Product">
+          <h3>3D Printing Product #14</h3>
+          <p>Example product in the 3D Printing category.</p>
+        </div>
+      </a>
+      </section>
+        <div id="pagination" class="pagination"></div>
+
+    </main>
+  </div>
+
+  
+
+   <!-- Contact -->
+<section id="contact" class="tm-section-pad-top tm-parallax-2">
+  <div class="container tm-container-contact">
+    <div class="row">
+      <div class="text-center col-12">
+        <h2 class="tm-section-title mb-4">Can't find the product you need?</h2>
+        <p class="mb-5">
+          Looking for a reliable OEM/ODM partner? Let’s collaborate to bring your designs to life.
+        </p><br>
+      </div>
+
+      <!-- يسار: الفورم -->
+      <div class="col-sm-12 col-md-6">
+        <form action="" method="get">
+          <input id="name" name="name" type="text" placeholder="Your Name" class="tm-input" required />
+          <input id="email" name="email" type="email" placeholder="Your Email" class="tm-input" required />
+          <textarea id="message" name="message" rows="8" placeholder="Message" class="tm-input" required></textarea>
+          <button type="submit" class="tm-btn-submit">Submit</button>
+        </form>
+      </div>
+
+      <!-- يمين: بيانات التواصل + السوشال -->
+      <div class="col-sm-12 col-md-6">
+
+        <div class="contact-item">
+          <a rel="nofollow" href="#" class="item-link">
+            <i class="far fa-2x fa-comment mr-4"></i>
+            <span class="mb-0">Chat Online</span>
+          </a>
+        </div>
+
+        <div class="contact-item">
+          <a rel="nofollow" href="mailto:mail@company.com" class="item-link">
+            <i class="far fa-2x fa-envelope mr-4"></i>
+            <span class="mb-0">sunlight@gmail.com</span>
+          </a>
+        </div>
+
+        <div class="contact-item">
+          <a rel="nofollow" href="https://www.google.com/maps" class="item-link">
+            <i class="fas fa-2x fa-map-marker-alt mr-4"></i>
+            <span class="mb-0">
+              Address: No. 6-22 Fenhe Road, Core Area, Jiaozhou City, Qingdao, Shandong, China
+            </span>
+          </a>
+        </div>
+
+        <div class="contact-item">
+          <a rel="nofollow" href="tel:0100200340" class="item-link">
+            <i class="fas fa-2x fa-phone-square mr-4"></i>
+            <span class="mb-0">+86 1592599-9965</span>
+          </a>
+        </div>
+
+        <!-- Social -->
+        <div class="footer-column">
+          <h4 style="font-size: 40px; padding-left: 25px;">Follow Us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- row ending -->
+  </div>
+</section>
+	<footer class="text-center small tm-footer">
+          <p class="mb-0">
+         All rights reserved / Copyright &copy; 2025 SunLight   
+          </p>        
+        </footer>
+
+  <!-- JavaScript for filtering -->
+   <script src="/js/jquery-1.9.1.min.js"></script>     
+    <script src="/slick/slick.min.js"></script>
+    <script src="/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="/js/easing.min.js"></script>
+    <script src="/js/jquery.singlePageNav.min.js"></script>     
+    <script src="/js/bootstrap.min.js"></script> 
+    <script src="/js/products.js"></script>
+</body>
+</html>

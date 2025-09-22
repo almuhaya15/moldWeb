@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/slick/slick.css">
+    <link rel="stylesheet" href="/slick/slick-theme.css">
+    <link rel="stylesheet" href="/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/products/css/product-dtl.css">
+
+</head>
+<body>
+
+  <!-- Navigation -->
+      <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
+        <div class="container">   
+          <div class="tm-next">
+              <a href="/index.html" class="navbar-brand">SunLight</a>
+          </div>             
+            
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars navbar-toggler-icon"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link tm-nav-link" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link tm-nav-link" href="/index.html#whatwedo">What We Do</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link tm-nav-link" href="/index.html#testimonials">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link tm-nav-link" href="/index.html#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                   <a class="nav-link tm-nav-link current" href="/products.html">Products</a>
+              </li>
+              <li>
+                <a class="nav-link tm-nav-link" href="/about.html">About Us</a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link tm-nav-link" href="#contact">Contact</a>
+              </li>                    
+            </ul>
+          </div>        
+        </div>
+      </nav>
+
+<!-- Breadcrumbs -->
+<nav class="breadcrumbs">
+  <a href="/HTML/index.html">Home</a> &gt;
+  <a href="/products/html/products.html">Products</a> &gt;
+  <span id="breadcrumbName">Product Name</span>
+</nav>
+
+<main class="product-page">
+
+  <!-- LEFT COLUMN: Product Images -->
+  <aside class="product-images">
+    <img id="mainImage" src="" alt="Product Image">
+    <div class="thumbnails"></div>
+  </aside>
+
+  <!-- RIGHT COLUMN: Product Info -->
+  <section class="product-info">
+    <div class="info-box">
+      <h1 id="productName">Product Name</h1>
+      <p id="shortDescription">Short description of the product.</p>
+
+      <div class="contact-box">
+        <div class="contact-item">
+          <label>Email</label>
+          <input type="text" value="plastic@victory-sh.com" readonly>
+        </div>
+        <div class="contact-item">
+          <label>Phone</label>
+          <input type="text" value="+86-13256821248" readonly>
+        </div>
+      </div>
+    </div>
+
+    <button id="consultBtn" class="cta-btn" onclick="document.getElementById('quoteForm').scrollIntoView({behavior: 'smooth'});">
+      Product Consulting
+    </button>
+    <button id="relatedBtn" class="secondary-btn">Related Products</button>
+  </section>
+
+</main>
+
+<!-- SECTION: Product Details Tabs -->
+<section class="product-details">
+  <div class="tabs">
+    <button class="tab-link active" data-tab="desc">Description</button>
+    <button class="tab-link" data-tab="features">Features</button>
+    <button class="tab-link" data-tab="keywords">Keywords</button>
+  </div>
+
+  <div class="tab-content active" id="desc">
+    <p id="fullDescription">Full description of the product.</p>
+  </div>
+
+  <div class="tab-content" id="features">
+    <ul id="featuresList"></ul>
+  </div>
+
+  <div class="tab-content" id="keywords">
+    <p id="keywordsList"></p>
+  </div>
+</section>
+
+<!-- SECTION: Get A Quote -->
+<section id="quoteForm" class="quote-section">
+  <div class="quote-header">
+    <h2>Get A Quote</h2>
+    <p>Please leave your contact information and our professionals will contact you shortly!</p>
+    <hr><br><br>
+  </div>
+
+  <form class="quote-form" action="" method="post">
+    <input type="text" name="productName" id="quoteProductName" value="" readonly />
+    <input id="name" name="name" type="text" placeholder="Your Name" required />
+    <input id="email" name="email" type="email" placeholder="Your Email" required />
+    <input id="phone" name="phone" type="text" placeholder="Phone Number" required />
+    <textarea id="message" name="message" rows="6" placeholder="Message" required></textarea>
+    <button type="submit" class="tm-btn-submit">Submit</button>
+  </form>
+</section>
+
+<!-- SECTION: Related Products -->
+<section id="related-products" class="related-section">
+  <h3>Related Products</h3>
+  <div class="related-list" id="relatedList">
+    <!-- المنتجات المرتبطة يمكن تحديثها لاحقًا -->
+  </div>
+
+  <!-- Pagination Buttons -->
+  <div id="pagination" class="pagination"></div>
+</section>
+
+<script src="/products/js/product-dtl.js"></script>
+
+ <!-- Contact -->
+<section id="contact" class="tm-section-pad-top tm-parallax-2">
+  <div class="container tm-container-contact">
+    <div class="row">
+      <div class="text-center col-12">
+        <h2 class="tm-section-title mb-4">Can't find the product you need?</h2>
+        <p class="mb-5">
+          Looking for a reliable OEM/ODM partner? Let’s collaborate to bring your designs to life.
+        </p><br>
+      </div>
+
+      <!-- يسار: الفورم -->
+      <div class="col-sm-12 col-md-6">
+        <form action="" method="get">
+          <input id="name" name="name" type="text" placeholder="Your Name" class="tm-input" required />
+          <input id="email" name="email" type="email" placeholder="Your Email" class="tm-input" required />
+          <textarea id="message" name="message" rows="8" placeholder="Message" class="tm-input" required></textarea>
+          <button type="submit" class="tm-btn-submit">Submit</button>
+        </form>
+      </div>
+
+      <!-- يمين: بيانات التواصل + السوشال -->
+      <div class="col-sm-12 col-md-6">
+
+        <div class="contact-item">
+          <a rel="nofollow" href="#" class="item-link">
+            <i class="far fa-2x fa-comment mr-4"></i>
+            <span class="mb-0">Chat Online</span>
+          </a>
+        </div>
+
+        <div class="contact-item">
+          <a rel="nofollow" href="mailto:mail@company.com" class="item-link">
+            <i class="far fa-2x fa-envelope mr-4"></i>
+            <span class="mb-0">sunlight@gmail.com</span>
+          </a>
+        </div>
+
+        <div class="contact-item">
+          <a rel="nofollow" href="https://www.google.com/maps" class="item-link">
+            <i class="fas fa-2x fa-map-marker-alt mr-4"></i>
+            <span class="mb-0">
+              Address: No. 6-22 Fenhe Road, Core Area, Jiaozhou City, Qingdao, Shandong, China
+            </span>
+          </a>
+        </div>
+
+        <div class="contact-item">
+          <a rel="nofollow" href="tel:0100200340" class="item-link">
+            <i class="fas fa-2x fa-phone-square mr-4"></i>
+            <span class="mb-0">+86 1592599-9965</span>
+          </a>
+        </div>
+
+        <!-- Social -->
+        <div class="footer-column">
+          <h4 style="font-size: 40px; padding-left: 25px;">Follow Us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- row ending -->
+  </div>
+</section>
+	
+</body>
+<footer class="text-center small tm-footer">
+          <p class="mb-0">
+         All rights reserved / Copyright &copy; 2025 SunLight   
+          </p>        
+        </footer>
+</html>
